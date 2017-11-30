@@ -164,8 +164,8 @@
   '(("github.com/\\(?:repos/\\)?[^/]+/[^/]+" . org-sync-github-backend)
     ("bitbucket.org/[^/]+/[^/]+"             . org-sync-bb-backend)
     ("rememberthemilk.com"                   . org-sync-rtm-backend)
-    ("/projects/[^/]+"                       . org-sync-rmine-backend)
-    (".*"                                    . org-sync-gitlab-backend))
+    ("/api/v4/projects/.*"                   . org-sync-gitlab-backend)
+    ("/projects/[^/]+"                       . org-sync-rmine-backend))
   "Alist of url patterns and corresponding org-sync backends.")
 
 (defvar org-sync-cache-file (concat user-emacs-directory "org-sync-cache")
